@@ -9,6 +9,7 @@ rsync -av --delete \
     --exclude='.git' \
     --exclude='.gitignore' \
     --exclude='sync_config.sh' \
+    --exclude='KlipperScreen.conf' \
     "$SOURCE_DIR" "$DEST_DIR"
 
 sudo service klipper restart
